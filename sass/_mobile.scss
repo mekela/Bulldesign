@@ -3,6 +3,246 @@
 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 1600px) {
+  .logo{
+  	left: 0px;
+  }
+  .pencil{
+  	right: -10%;
+  }
+}
+
+@include mq($max-width: 1300px) {
+	.container, .footer .container{
+		width: auto;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+		.pencil, .prestashop_fixed{
+		  	display: none;
+		}
+		.slogan .container{
+			padding-right: 10px;
+			height: 900px;
+			padding-left: 10px;
+		}
+	.photo_grid{
+		text-align: center;
+		font-size: 0;
+		a{
+			display: inline-block;
+    		float: none;
+		}
+	}
+	.fixed_menu{
+		height: 100vh;
+		overflow-y: auto;
+	}
+}
+
+@include mq($max-width: 1100px) {
+	.fixed_menu{
+		right: -100%
+	}
+}
+
+/*tablet*/
+@include mq($max-width: 1024px) {
+	.container, .footer .container{
+		width: 720px;
+		padding: 0;
+	}
+	.head_menu{
+		width: 645px;
+		text-align: center;
+		box-sizing: border-box;
+		padding-left: 100px;
+		li{
+			padding: 0 12px;
+			a{
+				font-size: 18px;
+			}
+		}
+	}
+	.main{
+		background:url(../img/logo_big.png) no-repeat left 476px;
+	}
+	.slogan article{
+		width: auto;
+	}
+	.ad_text_wrap{
+		background-size: contain;
+	}
+	.photo_grid a{
+		width: calc(50% - 24px);
+		margin: 0 12px 40px 12px;
+		text-decoration: none;
+		img{
+			clear: both;
+			display: block;
+		}
+		div{
+			position: static;
+			opacity: 1;
+			color: black;
+			overflow: hidden;
+			background: none;
+			span{
+				position: static;
+				transform: translateY(0%);
+				em, strong{
+					color: #000228;
+					opacity: 1;
+					padding: 10px 0 0 0;
+					position: static;
+					overflow: hidden;
+					box-sizing: border-box;
+				}
+				strong{
+					float: left;
+					font-family: $fontfamily;
+				}
+				em{
+					text-align: right;
+					display: block;
+					font-size: 16px;
+					padding-top: 14px;
+					padding-right: 25px;
+					background:url(../img/coffece_arrow.png) no-repeat right 16px;
+				}
+			}
+		}
+	}
+	.see_all h6{
+		font-size: 80px;
+	}
+	.prestashop_foot{
+		float: right;
+		width: 100%;
+		padding: 10px 0;
+		text-align: right;
+		img{
+		display: none;
+		}
+		figcaption{
+			display: inline-block;
+			width: 490px;
+			padding: 12px 0 12px 54px;
+			text-align: left;
+			background:url(../img/ping.png) no-repeat left center;
+		}
+	}
+}
+
+/*mobile*/
+@include mq($max-width: 720px) {
+	.container, .footer .container{
+		width: auto;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.head_menu{
+		display: none;
+	}
+	.header .menu_item{
+		vertical-align: middle;
+		&:before{
+			content: 'Menu';
+			text-transform: uppercase;
+			color: #e4e4e4;
+			font-size: 13px;
+			padding: 0 14px 0 0;
+		}
+		img{
+			vertical-align: middle;
+		}
+	}
+	.header {
+		padding-top: 0;
+		padding-bottom: 11px
+	}
+	.fixed_menu_inner{
+		padding: 11px 0 0 40px;
+	}
+	.ad_text_wrap section{
+		width: auto;
+		padding: 25px;
+	}
+	.photo_grid a{
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 36px;
+		img{
+			width: 100%;
+		}
+	}
+	.contact_us{
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
+@include mq($max-width: 500px) {
+	.fixed_menu{
+		min-width: 320px;
+	}
+		.fixed_menu_inner{
+			width: 280px;
+		}
+	.container, .footer .container, .slogan .container{
+		width: 280px;
+		padding: 0;
+	}
+		.slogan article h2{
+			font-size: 40px;
+		}
+		.slogan article  p{
+			font-size: 17px;
+		}
+
+	.slogan .container{
+		padding-top: 100px;
+		height: 595px;
+	}
+		.coffce h3{
+			font-size: 13px;
+		}
+	.main {
+   	 	background:url(../img/logo_big.png) no-repeat -224px 476px;
+   	 	background-size: auto 495px;
+	}
+	.ad_text_wrap{
+		margin-top: 200px;
+		background-size: cover;
+	}
+		.ad_text_wrap section {
+			height: auto;
+			padding: 39px 30px;
+			background-size: auto 77px ;
+			h4{
+				font-size: 24px;
+			}
+			p{
+				font-size: 14px;
+			}
+		}
+		.ad_text_wrap{
+			min-height: 10px;
+		}
+	.see_all {
+		h6{
+			font-size: 42px;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+	.contact_us{
+		display: none;
+	}
+	.footer{
+		padding: 48px 0 83px 0;
+		background:url(../img/foot_mobile.png) no-repeat center bottom;
+		background-size: cover;
+	}
 }

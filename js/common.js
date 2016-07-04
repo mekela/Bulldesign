@@ -8,11 +8,10 @@ $(document).ready(function() {
 		}
 	});
 	
-	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	//show menu
+	$( ".menu_item" ).click(function() {
+	  $( ".fixed_menu" ).toggleClass( "active" );
 	});
+
+	
 });

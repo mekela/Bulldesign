@@ -144,11 +144,11 @@ textarea{
 //main containers
 .wrapper{
 @include povh('');
-margin:0 auto;
 }
 
 .container{
 width:1290px;
 margin:0 auto;
 @include povh('');
+padding: 0;
 }
