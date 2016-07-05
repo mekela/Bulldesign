@@ -6,6 +6,13 @@
 @include mq($max-width: 1600px) {
   .logo{
   	left: 0px;
+  	background:#fff;
+  	z-index: 4;
+  }
+  .about_page{
+  	.logo{
+  		background: none;
+  	}
   }
   .pencil{
   	right: -10%;
@@ -44,10 +51,17 @@
 	.fixed_menu{
 		right: -100%
 	}
+	.load_page_wrap{
+		display: none;
+	}
 }
 
 /*tablet*/
 @include mq($max-width: 1024px) {
+	.coffce{
+		bottom: 130px;
+		left: 12px;
+	}
 	.container, .footer .container{
 		width: 720px;
 		padding: 0;
@@ -126,12 +140,23 @@
 		}
 		figcaption{
 			display: inline-block;
-			width: 490px;
+			width: 412px;
 			padding: 12px 0 12px 54px;
 			text-align: left;
+			color: #000;
+			font-size: 18px;
+			font-family: $medium;
 			background:url(../img/ping.png) no-repeat left center;
 		}
 	}
+
+	.slogan article p{
+		padding-left:3px;
+	}
+	.footer{
+		background-image: url(../img/foot_bg_tablet.jpg);
+	}
+
 }
 
 /*mobile*/
@@ -141,12 +166,19 @@
 		padding-right: 10px;
 		padding-left: 10px;
 	}
+	.logo{
+		background: none;
+	}
 	.head_menu{
 		display: none;
 	}
 	.header .menu_item{
 		vertical-align: middle;
+		position: relative;
 		&:before{
+			position: absolute;
+		    left: -50px;
+		    top: 15px;
 			content: 'Menu';
 			text-transform: uppercase;
 			color: #e4e4e4;
@@ -179,7 +211,22 @@
 	.contact_us{
 		width: 100%;
 		margin: 20px 0;
+		display: none;
 	}
+	.coffce{
+		bottom: 0;
+		left: 3px;
+	}
+	.prestashop_foot{
+		width: 200px;
+		figcaption{
+			width: auto;
+		}
+	}
+	.slogan article h2{
+		padding-bottom: 12px;
+	}
+
 }
 
 @include mq($max-width: 500px) {
@@ -244,5 +291,23 @@
 		padding: 48px 0 83px 0;
 		background:url(../img/foot_mobile.png) no-repeat center bottom;
 		background-size: cover;
+	}
+	.logo{
+		img{
+			width: 60px;
+			display: block;
+			padding: 18px 0 0 0;
+		}
+	}
+	.coffce h3{
+		padding-left: 55px;
+		background: none;
+		&:after{
+			content: '→';
+		}
+	}
+	.coffce{
+		background-size: 25px auto;
+		background-position: 25px 43px;
 	}
 }
