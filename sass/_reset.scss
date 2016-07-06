@@ -113,9 +113,11 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
    }
 }
 input::-webkit-input-placeholder {color: inherit;}
+textarea::-webkit-input-placeholder {color: inherit;}
 input:-moz-placeholder {color: inherit;}
+textarea:-moz-placeholder {color: inherit;}
 textarea{
-  height: 90px;
+ height: 250px;
   padding-top: 5px;
 }
 //end buttons inputs
