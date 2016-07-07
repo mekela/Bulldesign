@@ -711,6 +711,7 @@
 		h4{
 			color: #070432;
 			line-height: 1.5;
+			padding-bottom: 10px;
 		}
 	}
 	& > div{
@@ -819,6 +820,9 @@
 	padding: 5px 0 370px 0 ;
 	img{
 		max-width: 100%;
+	}
+	.photo_grid{
+		padding-top: 0;
 	}
 }
 /*--------------end-cases----------------*/

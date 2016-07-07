@@ -35,8 +35,8 @@
 @include mq($max-width: 1400px) {
 	.container, .footer .container, .inner{
 		width: 1024px;
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 	.logo{
   	left: -91px;
@@ -48,16 +48,16 @@
 @include mq($max-width: 1150px) {
 	.container, .footer .container, .inner{
 		width: auto;
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 		.pencil, .prestashop_fixed{
 		  	display: none;
 		}
 		.slogan .container{
-			padding-right: 10px;
+			padding-right: 20px;
 			height: 900px;
-			padding-left: 10px;
+			padding-left: 20px;
 		}
 		.logo{
 			left: 	0;
@@ -73,6 +73,11 @@
 	.fixed_menu{
 		height: 100vh;
 		overflow-y: auto;
+	}
+	.cases_text_wrap h2{
+		br{
+			display: none;
+		}
 	}
 }
 
@@ -199,8 +204,8 @@
 @include mq($max-width: 720px) {
 	.container, .footer .container, .inner{
 		width: auto;
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 	.logo{
 		background: none;
