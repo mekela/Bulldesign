@@ -33,7 +33,7 @@
 }
 
 @include mq($max-width: 1300px) {
-	.container, .footer .container{
+	.container, .footer .container, .inner{
 		width: auto;
 		padding-right: 10px;
 		padding-left: 10px;
@@ -75,7 +75,7 @@
 		bottom: 130px;
 		left: 12px;
 	}
-	.container, .footer .container{
+	.container, .footer .container, .inner{
 		width: 720px;
 		padding: 0;
 	}
@@ -181,7 +181,7 @@
 
 /*mobile*/
 @include mq($max-width: 720px) {
-	.container, .footer .container{
+	.container, .footer .container, .inner{
 		width: auto;
 		padding-right: 10px;
 		padding-left: 10px;
@@ -276,7 +276,7 @@
 		.fixed_menu_inner{
 			width: 280px;
 		}
-	.container, .footer .container, .slogan .container{
+	.container, .footer .container, .slogan .container, .inner{
 		width: 280px;
 		padding: 0;
 	}
@@ -375,6 +375,9 @@
 			font-size: 30px;
 			padding-bottom: 50px;
 		}
+		h2{
+			font-size: 40px;
+		}
 		p{
 			font-size: 16px;
 			strong{
@@ -385,12 +388,24 @@
 	.cases_text_top section h2{
 		font-size: 50px;
 	}
+	.tabs_navigation li{
+		padding: 0 6px 0 0;
+	}
+	.photo_grid{
+		padding: 0 0 10px 0;
+	}
+	.tab_grid{
+		padding-bottom: 70px;
+	}
+	.partners_wrap nav a{
+		height: 77px;
+	}
 }
 
 @include screen(370px, 415px) {
-	.container, .footer .container, .slogan .container{
+	.container, .footer .container, .slogan .container, .inner{
 		width: auto;
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }

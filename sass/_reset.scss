@@ -146,9 +146,10 @@ textarea{
 //main containers
 .wrapper{
 @include povh('');
+min-height: 500px
 }
 
-.container{
+.container, .inner{
 width:1290px;
 margin:0 auto;
 @include povh('');

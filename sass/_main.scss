@@ -422,8 +422,10 @@
  			display: block;
  			float: left;
  			@include povh('');
+ 			@include transition(all 0.3s);
  			img{
  				display: block;
+ 				@include transition(all 0.3s);
  			}
  			&:hover{
  				div{
@@ -434,6 +436,9 @@
 	 					opacity: 1;	
  					}
  				}	
+ 				img{
+ 					transform: scale(1.2);
+ 				}
  			}
  			div{
 				position: absolute;
@@ -581,6 +586,7 @@
 		 article h2, article p{ color: #fff;}
 		 .container{
 		 	height: auto;
+		 	padding-top: 160px;
 		 }
 	}
 
@@ -697,7 +703,7 @@
 	}
 }
 .cases_text_wrap{
-	margin: 150px 0;
+	margin: 170px 0 150px 0;
 	position: relative;
 	color: #000;
 	&.cases_tabs_txt{
@@ -810,7 +816,7 @@
 	}
 }
 .tab_grid{
-	padding: 45px 0 370px 0 ;
+	padding: 5px 0 370px 0 ;
 	img{
 		max-width: 100%;
 	}
