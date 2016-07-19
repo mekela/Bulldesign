@@ -94,9 +94,9 @@
 	}
 	
 	.prestashop_fixed{
-		position: fixed;
-		left: 30px;
-		bottom: 20px;
+		position: absolute;
+		left: -139px;
+    	bottom: -70vh;
 		z-index: 5;
 		@include transition(all 0.5s);
 		a{
@@ -116,7 +116,7 @@
 			span{
 				display: inline-block;
 			    position: relative;
-			    left: -140px;
+			    left: -145px;
 			    bottom: 99px;
 			    width: 247px;
 			    padding-left: 70px;
@@ -137,8 +137,8 @@
 		
 	}
 	.pencil{
-		position: fixed;
-		right: 0px;
+		position: absolute;
+		right: -143px;
 		top: 480px;
 		z-index: 5;
 		a{

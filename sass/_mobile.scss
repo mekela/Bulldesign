@@ -15,7 +15,7 @@
   	}
   }
   .pencil{
-  	right: -10%;
+  	right: -11.5%;
   }
   .cases_text_wrap{
   	img{
@@ -30,19 +30,41 @@
   		}
   	}
   }
+  .prestashop_fixed{
+  	left: -85px;
+  }
 }
 
-@include mq($max-width: 1400px) {
+@include mq($max-width: 1490px) {
+	.logo{
+		left: -70px;
+	}
+	.head_menu {
+	    position: relative;
+	    left: 32px;
+	}
+	.prestashop_fixed{
+  	left: -42px;
+  	}
+}
+
+
+
+//1300px
+@include mq($max-width: 1279px) {
 	.container, .footer .container, .inner{
 		width: 1024px;
 		padding-right: 20px;
-		padding-left: 20px;
+		padding-left: 20px; 
 	}
 	.logo{
   	left: -91px;
   	background:#fff;
   	z-index: 4;
   	}
+  		.footer .container{
+  			width: 1035px;
+  		}
 }
 
 @include mq($max-width: 1150px) {
@@ -79,6 +101,9 @@
 			display: none;
 		}
 	}
+	.head_menu{
+		left: 90px;
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -92,6 +117,9 @@
 
 /*tablet*/
 @include mq($max-width: 1024px) {
+	.head_menu{
+		left: 0px;
+	}
 	.coffce{
 		bottom: 130px;
 		left: 12px;
