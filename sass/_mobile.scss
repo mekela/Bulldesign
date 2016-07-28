@@ -3,9 +3,25 @@
 
 
 //styles for custom device width
+@include mq($max-width: 1640px) {
+	.wrapper{
+		width: auto;
+		margin: 0 50px;
+	}
+	.container, .inner{
+		width: auto;
+		margin: 0 100px;
+	}
+	.header{
+		width: auto;
+		margin: 0 50px;
+		width: calc(100% - 100px);
+		left: 0;
+	}
+}
 @include mq($max-width: 1600px) {
   .logo{
-  	left: -111px;
+  	//left: -111px;
   	background:#fff;
   	z-index: 4;
   }
@@ -37,7 +53,7 @@
 
 @include mq($max-width: 1490px) {
 	.logo{
-		left: -70px;
+		left: 0px;
 	}
 	.head_menu {
 	    position: relative;
@@ -46,19 +62,35 @@
 	.prestashop_fixed{
   	left: -42px;
   	}
+
+  	.prestashop_fixed{
+		display: none;
+	}
+	.logo{
+		left: 0;
+	}
+	.head_menu{
+		display: none;
+	}
 }
 
 
 
 //1300px
-@include mq($max-width: 1279px) {
-	.container, .footer .container, .inner{
-		width: 1024px;
-		padding-right: 20px;
-		padding-left: 20px; 
+@include mq($max-width: 1370px) {
+	.prestashop_fixed{
+		display: none;
 	}
 	.logo{
-  	left: -91px;
+		left: 0;
+	}
+	.head_menu{
+		display: none;
+	}
+
+	
+	.logo{
+  	left: 0px;
   	background:#fff;
   	z-index: 4;
   	}
@@ -113,6 +145,13 @@
 	.load_page_wrap{
 		display: none;
 	}
+	.footer{
+		.float_left, .float_right{
+			width: 100%;
+			float: none !important;
+			text-align: center;
+		}
+	}
 }
 
 /*tablet*/
@@ -124,10 +163,10 @@
 		bottom: 130px;
 		left: 12px;
 	}
-	.container, .footer .container, .inner{
-		width: 720px;
-		padding: 0;
-	}
+	//.container, .footer .container, .inner{
+		//width: 720px;
+		//padding: 0;
+	//}
 	.head_menu{
 		width: 645px;
 		text-align: center;
@@ -226,6 +265,11 @@
 	.visit{
 		display: none;
 	}
+
+	.container, .inner{
+		width: auto;
+		margin: 0 50px;
+	}
 }
 
 /*mobile*/
@@ -302,7 +346,7 @@
 	}
 	.logo{
 		img{
-			width: 60px;
+			width: 40px;
 			display: block;
 			padding: 18px 0 0 0;
 		}
@@ -316,6 +360,32 @@
 	.tab_grid{
 		margin-top: 30px;
 	}
+	.footer .float_left .ovh section{
+		width: 100%;
+		float: none;
+		padding: 0 0 20px 0 !important;
+	}
+
+	.wrapper{
+		width: auto;
+		margin: 0 20px;
+	}
+	.container, .inner{
+		width: auto;
+		margin: 0 20px;
+	}
+	.header{
+		width: auto;
+		margin: 0 20px;
+		width: calc(100% - 40px);
+		left: 0;
+	}
+	.slogan article h2{
+		font-size: 40px;
+	}
+	.slogan article p{
+		font-size: 20px;
+	}
 }
 
 @include mq($max-width: 500px) {
@@ -325,10 +395,10 @@
 		.fixed_menu_inner{
 			width: 280px;
 		}
-	.container, .footer .container, .slogan .container, .inner{
-		width: 280px;
-		padding: 0;
-	}
+	// .container, .footer .container, .slogan .container, .inner{
+	// 	width: 280px;
+	// 	padding: 0;
+	// }
 		.slogan article h2{
 			font-size: 40px;
 		}
