@@ -18,6 +18,18 @@
 		width: calc(100% - 100px);
 		left: 0;
 	}
+	.slogan article h2{
+		font-size: 4vw;
+	}
+	.slogan article p{
+		font-size: 2vw;
+	}
+	.coffce h3, .see_all p{
+		font-size: 2vw;
+	}
+	.see_all h6{
+		font-size: 8vw;
+	}
 }
 @include mq($max-width: 1600px) {
   .logo{
@@ -31,7 +43,7 @@
   	}
   }
   .pencil{
-  	right: -11.5%;
+  	right: -145px;
   }
   .cases_text_wrap{
   	img{
@@ -48,6 +60,10 @@
   }
   .prestashop_fixed{
   	left: -85px;
+  }
+  .menu_item{
+  	position: static;
+  	right: 0;
   }
 }
 
@@ -97,6 +113,7 @@
   		.footer .container{
   			width: 1035px;
   		}
+  	
 }
 
 @include mq($max-width: 1150px) {
@@ -105,9 +122,14 @@
 		padding-right: 20px;
 		padding-left: 20px;
 	}
-		.pencil, .prestashop_fixed{
+		 .prestashop_fixed{
 		  	display: none;
 		}
+		.pencil {
+		    right: -120px;
+		    top: 370px
+		}
+
 		.slogan .container{
 			padding-right: 20px;
 			height: 900px;
@@ -229,7 +251,7 @@
 		}
 	}
 	.see_all h6{
-		font-size: 80px;
+		//font-size: 80px;
 	}
 	.prestashop_foot{
 		float: right;
@@ -272,7 +294,17 @@
 	}
 }
 
+@include mq($max-width: 800px) {
+	.slogan article p{
+		font-size: 4vw;
+	}
+	.coffce h3, .see_all p{
+		font-size: 4vw;
+	}
+}
+
 /*mobile*/
+
 @include mq($max-width: 720px) {
 	.container, .footer .container, .inner{
 		width: auto;
@@ -368,7 +400,7 @@
 
 	.wrapper{
 		width: auto;
-		margin: 0 20px;
+		margin: 0px;
 	}
 	.container, .inner{
 		width: auto;
@@ -386,6 +418,10 @@
 	.slogan article p{
 		font-size: 20px;
 	}
+
+	.pencil{
+  	display: none;
+ 	 }
 }
 
 @include mq($max-width: 500px) {
