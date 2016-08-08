@@ -30,7 +30,7 @@
 	.head_menu{
 		float: left;
 		width: 500px;
-		padding: 27px 0 0 0;
+		padding: 27px 0 0 7px;
 		li{
 			display: inline-block;
 			padding: 0 38px 0 0;
@@ -153,7 +153,8 @@
 		position: absolute;
 		//right: -143px;
 		right: -220px;
-		top: 480px;
+		//top: 480px;
+		bottom: -70vh; 
 		z-index: 5;
 		a{
 			color: #070432;
@@ -249,7 +250,8 @@
 		}
 	}
 		.fixed_menu_top{
-			@include povh('');
+			//@include povh('');
+			min-height: 35px;
 			.logo_text{
 				float: left;
 				padding: 14px 0 0 0;
@@ -322,7 +324,7 @@
 /*----------main----------*/
  
  .main{
- 	background:url(../img/logo_big.png) no-repeat center   474px;
+ 	background:url(../img/logo_big.png) no-repeat center   199px;
 	@include povh('');
  }
 
@@ -330,7 +332,7 @@
  	.slogan{
  		.container{
  		height: 100vh;
- 		padding: 227px 0 0 0;
+ 		padding: 117px 0 0 0;
  		box-sizing: border-box;
  		}
  		article{
@@ -357,7 +359,8 @@
  	}
 		.coffce {
 		    background: url("../img/coffece.png") no-repeat scroll 25px 33px;
-		    bottom: 25px;
+		    //bottom: 25px;
+		    bottom: 90px;
 		    left: 0px;
 		    position: absolute;
 		    @include transition(all 0.5s);
@@ -505,7 +508,7 @@
  	/*------------see--------------*/
  	.see_all{
  		color: #0b0b1b;
- 		padding-bottom: 400px;
+ 		padding-bottom: 320px;
  		a{
  			text-decoration: none;
  		}
@@ -519,6 +522,7 @@
  		p{
  			padding: 23px 0 0 0;
  			font-size: 30px;
+ 			font-family: $fontfamily;
  		}
  	}
  	/*------------end-see--------------*/
@@ -534,6 +538,7 @@
 	@include povh('');
 	min-height: 280px;
 	background:url(../img/foot_bg.png) no-repeat bottom center;
+	font-family: $fontfamily;
  	.container{
  		padding: 0 0 80px 0;
  	}
