@@ -3,6 +3,12 @@
 
 
 //styles for custom device width
+
+@include mq($max-height: 838px) {
+.pencil{
+	bottom: -45vh;
+}
+}
 @include mq($max-width: 1640px) {
 	.wrapper{
 		width: auto;
@@ -94,25 +100,21 @@
 
 //1300px
 @include mq($max-width: 1370px) {
-	.logo{
-		left: 0;
-	}
+	
 	.head_menu{
 		display: none;
 	}
 	.prestashop_fixed{
 		display: none;
 	}
-	.logo{
-		left: 0;
-	}
+
 	.head_menu{
 		display: none;
 	}
 
 	
 	.logo{
-  	left: 0px;
+  	left: -83px;
   	background:#fff;
   	z-index: 4;
   	}
@@ -132,8 +134,8 @@
 		  	display: none;
 		}
 		.pencil {
-		    right: -120px;
-		    top: 370px
+		  right: -186px;
+		   // top: 370px
 		}
 
 		.slogan .container{
@@ -192,6 +194,9 @@
 
 /*tablet*/
 @include mq($max-width: 1024px) {
+	.bull{
+		display: none;
+	}
 	.head_menu{
 		left: 0px;
 	}

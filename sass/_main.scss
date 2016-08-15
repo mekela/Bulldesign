@@ -24,7 +24,7 @@
  	}
  	.logo{
  		position: absolute;
-		left: -83px;
+		left: -70px;
     	top: 3px;
  	}
 	.head_menu{
@@ -141,13 +141,16 @@
 			}
 
 			img:hover + span{
-				left: -57px;
-				bottom: 10px;
-				@include rotate(0);
+				// left: -57px;
+				// bottom: 10px;
+				// @include rotate(0);
+				
 			}
 
 		}
-		
+		&:hover{
+			@extend .hinge;
+		}
 	}
 	.pencil{
 		position: absolute;
@@ -260,6 +263,7 @@
 				padding: 0;
 				margin-top: 0;
 				border: 1px solid #fff;
+				right: -140px;
 				img{
 					width: 47px;
 					border: 1px solid #fff;
@@ -278,13 +282,15 @@
 	z-index: 500;
 	top: 0;
 	left: 0;
-	display: none;
+	//display: none;
 	.container{
 		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: #ffffff;
+		width: 100%;
+		padding: 0 30px;
 		section{
 			width: inherit;
 		}
@@ -324,8 +330,14 @@
 /*----------main----------*/
  
  .main{
- 	background:url(../img/logo_big.png) no-repeat center   199px;
+ 	//background:url(../img/logo_big.png) no-repeat center   199px;
 	@include povh('');
+ }
+ .bull{
+ 	position: absolute;
+ 	z-index: 0;
+ 	right: 161px;
+    top: 197px;
  }
 
  	/*------------slogan-----------*/
@@ -508,7 +520,7 @@
  	/*------------see--------------*/
  	.see_all{
  		color: #0b0b1b;
- 		padding-bottom: 320px;
+ 		padding-bottom: 253px;
  		a{
  			text-decoration: none;
  		}
