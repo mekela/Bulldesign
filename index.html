@@ -22,7 +22,6 @@
 			<script src="js/modernizr.custom.js"></script>
 			<script src="js/bootstrap.min.js"></script>
 			<script src="js/typed.js"></script>
-			
 			<script src="js/wow.min.js"></script>
 			<script src="js/common.js"></script>
 			<!--[if IE]>  
@@ -49,23 +48,30 @@
 <!--header-->
 <header class="header">
 	<div class="container">
-		<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
-		<nav class="head_menu">
+		<a href="/" class="logo  wow fadeIn" data-wow-delay="7s"><img src="img/logo.png" alt=""></a>
+		<!-- <nav class="head_menu">
 			<ul>
 				<li><a href="#">Forside</a></li>	
 				<li><a href="#">Kundecases</a></li>	
 				<li><a href="#">Om os</a></li>	
 				<li><a href="#">Kontakt</a></li>	
 			</ul>
-		</nav>
-		<div class="menu_item">
+		</nav> -->
+		<div class="menu_item  wow fadeIn"  data-wow-delay="7s">
 			<div class="hamburger hamburger--spin">
 			  <div class="hamburger-box">
 			    <div class="hamburger-inner"></div>
 			  </div>
 			</div>
 		</div>
-		<div class="visit"><a href="#">Besøg siden</a></div>
+
+		<div class="prestashop_fixed animated"><a href="#"><img src="img/ping.png" alt=""><span>Prestashop Partner</span></a></div>
+		<div class="pencil">
+			<a href="#">
+				<img src="img/pencil_sharpener.png" alt="">
+				<span>Få et skræddersyet tilbud</span>
+			</a>
+		</div>
 	</div>
 </header>
 <div class="fixed_menu_overlay"></div>
@@ -98,25 +104,29 @@
 		</nav>
 	</div>
 </div>
-<div class="prestashop_fixed"><a href="#"><img src="img/ping.png" alt=""><span>Prestashop Partner</span></a></div>
-<div class="pencil">
-	<a href="#">
-		<img src="img/pencil_sharpener.png" alt="">
-		<span>Få et skræddersyet tilbud</span>
-	</a>
-</div>
-<!--end-header-->
 
+<!--end-header-->
+<div class="header_menu container">
+	<nav class="head_menu  wow fadeIn">
+		<ul>
+			<li><a href="#">Forside</a></li>	
+			<li><a href="#">Kundecases</a></li>	
+			<li><a href="#">Om os</a></li>	
+			<li><a href="#">Kontakt</a></li>	
+		</ul>
+	</nav>
+</div>
 <!--main-->
 <div class="main">
 	
-	<img src="img/logo_big.png" alt="" class=" wow fadeInUp bull"  data-wow-delay="1s">
+	<img src="img/logo_big.png" alt="" class=" wow fadeInUp bull"  data-wow-delay="7s">
 
-	<div class="slogan wow fadeInUp"  data-wow-delay="1s">
+	<div class="slogan wow fadeInUp"  data-wow-delay="7s">
 		<div class="container">
 			<article >
 				<h2>Digitale løsninger <br>
-				med <strong><em>resultater</em></strong> der <br> konverterer.</h2>
+				med <strong><em>resultater</em></strong> der <br>
+				konverterer.</h2>
 				<p>Vi udvikler webshops, visuelle identiteter, 	<br>strategier, koncepter og grafisk design.</p>
 			</article>
 			<div class="coffce cofce-hover">
@@ -217,23 +227,26 @@
 </div>
 <!--end-main-->
 <!--footer-->
-<footer class="footer">
+<footer class="footer wow fadeInUp">
 	<div class="container">
 		<div class="float_left">
-			<h6>Bulldesign ApS</h6>
-			<p>Seden Strandgyde 3 <br>
-			5240 Odense NØ <br>
-			+45 60 80 40 40</p>
-			<p>info@bulldesign.dk <br>CVR: 35840885</p>
+			<a href="/" class="foot_logo"><img src="img/logo_foot.png" alt=""></a>
+			<div class="ovh">
+				<section>
+					Seden Strandgyde 3 <br>
+					5240 Odense NØ <br>
+					+45 60 80 40 40
+				</section>
+				<section>
+					info@bulldesign.dk <br>
+					CVR: 35840885
+				</section>
+			</div>
 		</div>
-		<div class="contact_us">
-			<h6>Kontakt os i dag.</h6>
-			<p>Ring til os på <br>60 80 40 40 og fortæl os om dit projekt.</p>
+		<div class="float_right">
+			<a href="#"><img src="img/prestashop_foot.png" alt=""></a>
+			<p>Ring til os på  60 80 40 40 og fortæl <br>os om dit projekt.</p>
 		</div>
-		<figure class="prestashop_foot">
-			<img src="img/prestashop.png" alt="">
-			<figcaption>Prestashop Partner</figcaption>
-		</figure>
 	</div>
 </footer>
 <!--end-footer-->
