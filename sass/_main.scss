@@ -71,7 +71,7 @@
 	.menu_item{
 		float: right;
 		cursor: pointer;
-		margin: 15px 0 0 0 ;
+		margin: 15px 10px 0 0 ;
 		height: 47px;
 		width: 47px;
 		background:#010227;
@@ -155,7 +155,7 @@
 	.pencil{
 		position: absolute;
 		//right: -143px;
-		right: -220px;
+		right: -212px;
 		//top: 480px;
 		bottom: -70vh; 
 		z-index: 5;
@@ -263,7 +263,7 @@
 				padding: 0;
 				margin-top: 0;
 				border: 1px solid #fff;
-				right: -140px;
+				right: -110px;
 				img{
 					width: 47px;
 					border: 1px solid #fff;
@@ -291,6 +291,7 @@
 		color: #ffffff;
 		width: 100%;
 		padding: 0 30px;
+		margin: 0 120px;
 		section{
 			width: inherit;
 		}
