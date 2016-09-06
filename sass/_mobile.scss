@@ -74,6 +74,10 @@
   .header .container{
   	margin-right: 20px;
   }
+  .fixed_menu_top .menu_item {
+	    position: absolute;
+	    right: 74px;
+  }
 }
 
 @include mq($max-width: 1490px) {
@@ -114,7 +118,7 @@
 
 	
 	.logo{
-  	left: -83px;
+  	left: -70px;
   	background:#fff;
   	z-index: 4;
   	}
@@ -144,12 +148,15 @@
 			padding-left: 20px;
 		}
 		.logo{
-			left: 	-95px;
+			left: -112px;
 		}
 		.menu_item{
 			right: -62px;
 			position: relative;
 		}
+			.fixed_menu_top .menu_item{
+				position: static;
+			}
 	.photo_grid{
 		text-align: center;
 		font-size: 0;
@@ -173,6 +180,10 @@
 	.wrapper {
 	    width: auto;
 	    margin: 0px;
+	}
+	.fixed_menu_top .menu_item {
+	    position: absolute;
+	    right: 32px;
 	}
 }
 
@@ -208,6 +219,15 @@
 		//width: 720px;
 		//padding: 0;
 	//}
+	.logo{
+		left: -92px;
+	}
+	.menu_item{
+		right: -92px;
+	}
+	.fixed_menu_top .menu_item{
+		right: 3px;
+	}
 	.head_menu{
 		width: 645px;
 		text-align: center;
@@ -338,13 +358,23 @@
 /*mobile*/
 
 @include mq($max-width: 720px) {
+	.container{
+		overflow: visible;
+	}
 	.container, .footer .container, .inner{
 		width: auto;
-		padding-right: 20px;
-		padding-left: 20px;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.slogan .container{
+		padding-right: 0;
+		padding-left: 0;
 	}
 	.logo{
 		background: none;
+	}
+	.fixed_menu_top .menu_item{
+		right: 3px;
 	}
 	.head_menu{
 		display: none;
@@ -376,6 +406,7 @@
 	.ad_text_wrap section{
 		width: auto;
 		padding: 25px;
+		margin-left: 0;
 	}
 	.photo_grid a{
 		width: 100%;
@@ -391,8 +422,8 @@
 		display: none;
 	}
 	.coffce{
-		bottom: 0;
-		left: 3px;
+		bottom: 30px;
+		left: 0px;
 	}
 	.prestashop_foot{
 		width: 200px;
@@ -412,7 +443,7 @@
 		img{
 			width: 40px;
 			display: block;
-			padding: 18px 0 0 0;
+			padding: 12px 0 0 0;
 		}
 	}
 	.cases_text_top section{
@@ -456,15 +487,27 @@
  	 }
 
  	.menu_item{
-		right: -52px;
+		right: -31px;
 		position: relative;
 	}
 	.logo{
-		left: -33px;
+		left: -21px;
+		// background: yellow;
+		img{
+			width: 47px;
+		}
 	}
+		.fixed_menu_top .menu_item{
+			position: absolute;
+			right: 7px;
+		}
+
 }
 
 @include mq($max-width: 500px) {
+	.header .menu_item:before{
+		display: none;
+	}
 	.see_all{
 		padding: 100px 0;
 	}
@@ -479,10 +522,15 @@
 	// 	padding: 0;
 	// }
 		.slogan article h2{
-			font-size: 40px;
+			font-size: 36px;
+			
+		}
+		.slogan article h2 br{
+			display: none;
 		}
 		.slogan article  p{
 			font-size: 17px;
+			
 		}
 
 	.slogan .container{
@@ -497,10 +545,10 @@
 			padding-left: 30px;
 		}
 		.coffce h3{
-			font-size: 13px;
+			font-size: 0px;
 		}
 	.main {
-   	 	background:url(../img/logo_big.png) no-repeat -224px 476px;
+   	 	background:url(../img/logo_big.png) no-repeat -224px 296px;
    	 	background-size: auto 495px;
 	}
 	.ad_text_wrap{
@@ -511,6 +559,7 @@
 			height: auto;
 			padding: 39px 30px;
 			background-size: auto 77px ;
+			margin-left: 0;
 			h4{
 				font-size: 24px;
 			}
@@ -609,11 +658,16 @@
 		display: none;
 	}
 }
+@include mq($max-width: 320px) {
+	.slogan article h2{
+			font-size: 30px;
+			
+		}
 
+}
 @include screen(370px, 415px) {
 	.container, .footer .container, .slogan .container, .inner{
 		width: auto;
-		padding-left: 20px;
-		padding-right: 20px;
+	
 	}
 }

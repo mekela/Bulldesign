@@ -37,6 +37,21 @@ $(document).ready(function() {
         
     });
 
+    //load2
+ //    Revealer.prototype.options = {
+	// 	// total number of revealing layers (min is 1)
+	// 	nmbLayers : 1,
+	// 	// bg color for the revealing layers
+	// 	bgcolor : '#fff',
+	// 	// effect classname
+	// 	effect : 'anim--effect-1',
+	// 	// callback
+	// 	onStart : function(direction) { return false; },
+	// 	// callback
+	// 	onEnd : function(direction) { return false; }
+	// };
+
+
 });
 
 new WOW().init();
