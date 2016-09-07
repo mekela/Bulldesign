@@ -451,16 +451,23 @@
  	/*----------end-ad-----------------*/
 
  	/*-------------grid--------------*/
+ 	.photo_grid_item{
+ 		width: 50%;
+ 	}
  	.photo_grid{
  		padding: 90px 0 320px 0;
  		box-sizing: border-box;
+ 		.container{
+ 			overflow: visible;
+ 		}
  		a{
  			display: block;
- 			float: left;
+ 			//float: left;
  			@include povh('');
  			@include transition(all 0.3s);
  			img{
  				display: block;
+ 				width: 100%;
  				@include transition(all 0.3s);
  			}
  			&:hover{
@@ -521,7 +528,7 @@
  	/*------------see--------------*/
  	.see_all{
  		color: #0b0b1b;
- 		padding-bottom: 253px;
+ 		padding-bottom: 323px;
  		a{
  			text-decoration: none;
  		}
@@ -784,6 +791,7 @@
 			color: #070432;
 			line-height: 1.5;
 			padding-bottom: 10px;
+			font-family: $fontfamily;
 		}
 	}
 	& > div{
@@ -857,7 +865,7 @@
 	padding-bottom: 40px;
 	li{
 		display: inline-block;
-		padding: 0 120px 0 0;
+		padding: 0 170px 0 0;
 		a{
 			font-size: 16px;
 			color: #000;

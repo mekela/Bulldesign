@@ -52,6 +52,10 @@ $(document).ready(function() {
 	// };
 
 
+
+
+
+
 });
 
 new WOW().init();
@@ -66,3 +70,35 @@ $(window).scroll(function(){
 	}
 	
 });
+
+// $(window).scroll(function() {
+
+// 	var st = $(this).scrollTop() /20;
+
+// 	$(".photo_grid_item.float_left").css({
+// 		"transform" : "translate3d(0px, " +  st + "%, .01px)",
+// 		"-webkit-transform" : "translate3d(0px, " +  st  + "%, .01px)"
+// 	});
+
+// });
+// $(window).scroll(function() {
+
+// 	var st = $(this).scrollTop() /60;
+
+// 	$(".photo_grid_item.float_right").css({
+// 		"transform" : "translate3d(0px, " +  st + "%, .01px)",
+// 		"-webkit-transform" : "translate3d(0px, " +  st  + "%, .01px)"
+// 	});
+
+// });
+
+// $(window).scroll(function() {
+
+// 	var st = $(this).scrollTop() / -60;
+
+// 	$(".photo_grid").css({
+// 		"transform" : "translate3d(0px, " +  st + "%, .01px)",
+// 		"-webkit-transform" : "translate3d(0px, " +  st  + "%, .01px)"
+// 	});
+
+// });

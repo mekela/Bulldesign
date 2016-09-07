@@ -185,6 +185,9 @@
 	    position: absolute;
 	    right: 32px;
 	}
+	.fixed_menu{
+		overflow-x: hidden;
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -353,6 +356,9 @@
 	.coffce h3, .see_all p{
 		font-size: 4vw;
 	}
+	.fixed_menu{
+		width: 100%;
+	}
 }
 
 /*mobile*/
@@ -501,10 +507,22 @@
 			position: absolute;
 			right: 7px;
 		}
+	.coffce{
+		display: none;
+	}
+	.header{
+		position: absolute;
+	}
 
 }
 
 @include mq($max-width: 500px) {
+	.fixed_menu_inner nav{
+		padding-top: 20px;
+	}
+	.fixed_menu_inner nav ul{
+		padding-bottom: 0;
+	}
 	.header .menu_item:before{
 		display: none;
 	}
