@@ -6,7 +6,7 @@
 
 @include mq($max-height: 838px) {
 .pencil{
-	bottom: -45vh;
+	bottom: -59vh;
 }
 }
 @include mq($max-width: 1640px) {
@@ -94,9 +94,11 @@
 		display: none;
 	}
 	
-	
 	.coffce h3, .see_all p {
 	    font-size: 1.8vw;
+	}
+	.coffce{
+		bottom: 49px;
 	}
 }
 

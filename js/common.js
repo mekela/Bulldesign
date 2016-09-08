@@ -71,6 +71,15 @@ $(window).scroll(function(){
 	
 });
 
+$(window).scroll(function() {
+	var st = $(this).scrollTop();
+	var photo_grid = $( ".photo_grid" ).offset().top;
+	if(st>photo_grid){
+		st2=(st-photo_grid)/20;
+		$(".photo_grid_item.float_left").stop().animate({"marginTop": (st2) + "px"}, "slow" );
+	}
+});
+
 // $(window).scroll(function() {
 
 // 	var st = $(this).scrollTop() /20;
