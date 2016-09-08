@@ -80,6 +80,17 @@ $(window).scroll(function() {
 	}
 });
 
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 1400) {
+        $(".photo_grid").addClass("active");
+    } else {
+        $(".photo_grid").removeClass("fixed");
+    }
+});
+
+
 // $(window).scroll(function() {
 
 // 	var st = $(this).scrollTop() /20;
