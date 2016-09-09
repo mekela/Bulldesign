@@ -100,6 +100,10 @@
 	.coffce{
 		bottom: 49px;
 	}
+	.photo_grid a div em{
+		display: block;
+		text-align: left;
+	}
 }
 
 
@@ -127,6 +131,9 @@
   		.footer .container{
   			width: 1035px;
   		}
+  	.coffce{
+  		bottom: 42px;
+  	}
   	
 }
 
@@ -254,46 +261,53 @@
 	.ad_text_wrap{
 		background-size: contain;
 	}
-	.photo_grid a{
-		width: calc(50% - 24px);
-		margin: 0 12px 40px 12px;
-		text-decoration: none;
-		img{
-			clear: both;
+	.photo_grid_item{
+		width: 100%;
+		float: none !important;
+		& a{
 			display: block;
 		}
-		div{
-			position: static;
-			opacity: 1;
-			color: black;
-			overflow: hidden;
-			background: none;
-			span{
-				position: static;
-				transform: translateY(0%);
-				em, strong{
-					color: #000228;
-					opacity: 1;
-					padding: 10px 0 0 0;
-					position: static;
-					overflow: hidden;
-					box-sizing: border-box;
-				}
-				strong{
-					float: left;
-					font-family: $fontfamily;
-				}
-				em{
-					text-align: right;
-					display: block;
-					font-size: 16px;
-					padding-top: 14px;
-					padding-right: 25px;
-					background:url(../img/coffece_arrow.png) no-repeat right 16px;
-				}
-			}
-		}
 	}
+	// .photo_grid a{
+	// 	width: calc(50% - 24px);
+	// 	margin: 0 12px 40px 12px;
+	// 	text-decoration: none;
+	// 	img{
+	// 		clear: both;
+	// 		display: block;
+	// 	}
+	// 	div{
+	// 		position: static;
+	// 		opacity: 1;
+	// 		color: black;
+	// 		overflow: hidden;
+	// 		background: none;
+	// 		span{
+	// 			position: static;
+	// 			transform: translateY(0%);
+	// 			em, strong{
+	// 				color: #000228;
+	// 				opacity: 1;
+	// 				padding: 10px 0 0 0;
+	// 				position: static;
+	// 				overflow: hidden;
+	// 				box-sizing: border-box;
+	// 			}
+	// 			strong{
+	// 				float: left;
+	// 				font-family: $fontfamily;
+	// 			}
+	// 			em{
+	// 				text-align: right;
+	// 				display: block;
+	// 				font-size: 16px;
+	// 				padding-top: 14px;
+	// 				padding-right: 25px;
+	// 				background:url(../img/coffece_arrow.png) no-repeat right 16px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 	.see_all h6{
 		//font-size: 80px;
 	}
@@ -691,3 +705,26 @@
 	
 	}
 }
+
+
+
+
+// @media screen and (min-width: 960px) and (max-width: 1170px) {
+// 	nav.mega-menu .carousel-nav.next, nav.mega-menu .carousel-nav.prev{
+// 	display: none;
+// 	}
+// 	.nav-menu .nav-item{
+// 	display: block !important;
+// 	}
+// 	.nav-menu .mega-menu-item .item-title{
+// 	padding: 0 9px !important;
+// 	}
+// 	#header-container.logo-position-left:not(.small) .header-col-fluid {
+// 	    margin-left: 0 !important;
+// 	    margin-right: 0 !important;
+// 	}
+
+// 	#header-container #header .header-wrap > .row:last-child .header-main-panel .header-col-right{
+// 		display: none;
+// 	}
+// }
